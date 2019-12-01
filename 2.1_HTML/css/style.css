@@ -1,0 +1,190 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 нояб. 2019 г., 20:27:29
+    Author     : yaroslav
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    list-style: none;
+}
+html, body{
+    height: 100vh;
+}
+body{
+    background: #f9f9f9;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 1060px;
+    min-height: 950px;
+    margin: 0 auto;/*margin-left: calc(50% - 530px); */
+    padding: 36px 46px;
+    background: #fff;
+    box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3);
+}
+
+.logo{
+    font-size: 49px;
+    font-weight:600;
+}
+.logo a{
+    text-decoration: none;
+    color: #333;
+    letter-spacing: -3px;
+}
+/* TOP NAVIGATION*/
+.navigation{
+    width: 100%;
+    height: 40px;
+    margin: 28px 0;
+    word-spacing: -1em;
+    background-image: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
+}
+.navigation li{
+    display: inline-block;
+    line-height: 40px; 
+}
+.navigation a{
+    display: block;
+    padding: 0 25px;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    text-shadow: .5px .866px .5px rgba(0, 0, 0, .5);
+}
+.navigation a:hover{
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+    background: linear-gradient(0deg, #2e2e2e 0%, #4a4a4a 100%);
+    transition: .5s all;
+}
+.main-nav a{
+    width: 144px;
+}
+.goods-nav a{
+    width: 100px;
+}
+.about-nav a{
+    width: 172px;
+    text-align: center;
+}
+.contacts-nav a{
+    width: 130px;
+    padding: 0 20px;
+}
+/*END TOP NAVIGATION*/
+
+/*CONTENT*/
+
+.content{
+   flex: 1 0 auto;
+}
+aside, .goods-description{
+    display: inline-block;
+  
+    
+}
+aside{
+    width: 24.7%;
+    margin: 12px 2px;
+    vertical-align: top;
+    border: 1px solid #c7c7c7;
+}
+aside li{
+    border-bottom: 1px solid #c7c7c7;
+
+}
+aside li:last-child{
+    border-bottom: none;
+}
+aside a {
+    display: block;
+    width: 100%;
+    padding: 0 22px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 39px;
+    color: #656363;
+}
+aside a:hover{
+    padding: 0 35px;
+    background: #f8f8f8;
+    transition: .3s all;
+}
+.goods-description{
+    margin: 12px 0 0 41px;
+    width: 70%;
+}
+.img-wrapper{
+    display: table-cell;
+    border: 1px solid #c7c7c7;
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.goods-description p{
+    margin: 35px 27px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #2c2c2c;
+}
+/*END CONTENT*/
+
+/*FOOTER*/
+
+
+footer{
+    margin-top: 24px;
+    width: 100%;
+    height: 40px;
+    background: #e1e1e1;
+    flex: 0 0 auto;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+footer li{
+    padding: 0 25px;
+    font-size: 13px;
+    line-height: 38px;
+    
+}
+footer a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #2c2c2c;
+    text-decoration: none;
+    
+}
+footer a:hover{
+    text-decoration: underline;
+}
+.goods-footer{
+    margin: 0 43px;
+}
+.contacts-footer{
+    flex: 1 0 auto;
+    margin: 0 45px;
+}
+.copyright:last-child{
+    flex: 0 1 auto;
+}
