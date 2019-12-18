@@ -1,0 +1,188 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 дек. 2019 г., 18:37:47
+    Author     : solovyov
+*/
+
+@font-face{
+    font-family: "Tahoma";
+    src: url("//db.onlinewebfonts.com/t/cd0381aa3322dff4babd137f03829c8c.eot"),
+         url("//db.onlinewebfonts.com/t/cd0381aa3322dff4babd137f03829c8c.ttf") format("truetype");
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tahoma";
+}
+
+body{
+    background: #0c739f url(../img/background.jpg) repeat-x 0px -36px ;
+}
+
+header, 
+.photo-wrapper,
+.menu,
+.content-wrapper,
+footer,
+.preview{
+    margin: 0 auto;
+    width: 1000px;
+    /* box-shadow: 0 8px 8px black */
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    height: 177px;
+    background: #fff;
+}
+
+.logo-wrapper{
+    float: left;
+    width: 319px;
+    height: 100%;
+    text-align: center;
+    background: url(../img/logo.png) no-repeat 27px 14px;
+}
+
+h1,
+address,
+.choose-country a,
+address a{
+    color: #128aa7;
+    
+}
+
+h1{
+    font-size: 12px;
+    margin-top: 110px;
+}
+
+
+address,
+.choose-country{
+    float: right;
+    width: 366px;
+}
+
+address{
+    padding: 7px 0 0px 209px;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+address p:first-child{
+    font-weight: bold;
+}
+
+address :last-child {
+    line-height: 10px;
+}
+
+.choose-country{
+    margin-top: 35px;
+}
+
+.choose-country li{
+    float: left;
+    width: 56px;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 600
+}
+
+.photo-wrapper{
+    position: relative;
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
+
+
+
+.menu{
+    height: 28px;
+    background:  #323232;
+    position: relative;
+    /* z-index: 1; */
+    border-top: 1px solid #cacbcb;
+    
+}
+.menu > li{
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.menu li a{
+    display: block;
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 28px;
+    padding: 0 15px;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background:  #323232;
+    transform: scaleY(0);
+    transition: all .3S linear;
+    transform-origin: 0 0;
+    /* z-index: 1; */
+}
+
+.menu .sub-menu a{
+    padding: 0;
+    /* height: 100%; */
+    text-align: center;
+}
+.menu li:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.content-wrapper{
+    min-height: 546px;
+    background: white;
+    clear: both;
+}
+
+.info{
+    float: left;
+    width: 25%;
+}
+
+.news{
+    float: right;
+    width: 25%;
+}
+
+.content{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.content-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer{
+    /* position: relative;
+    bottom: 0; */
+    text-align: center;
+}
