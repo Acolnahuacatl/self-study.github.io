@@ -64,8 +64,8 @@ address a{
 }
 
 h1{
-    font-size: 12px;
     margin-top: 110px;
+    font-size: 12px;
 }
 
 
@@ -109,8 +109,6 @@ address :last-child {
     border-bottom: 1px solid #128aa7;
 }
 
-
-
 .menu{
     /* height: 28px; */
     background:  #323232;
@@ -118,12 +116,14 @@ address :last-child {
     border-top: 1px solid #cacbcb;
     box-shadow: 0 2px 6px black;
 }
+
 .menu > li{
     float: left;
     position: relative;
     padding: 0 2%;
     list-style: none;
 }
+
 .menu li a{
     display: block;
     height: 100%;
@@ -143,13 +143,11 @@ address :last-child {
     transform: scaleY(0);
     transition: all .3S linear;
     transform-origin: 0 0;
-    /* z-index: 1; */
     box-shadow: 0 3px 4px rgba(0, 0, 0, .8);
 }
 
 .menu .sub-menu a{
     padding: 0;
-    /* height: 100%; */
     text-align: center;
 }
 
@@ -166,11 +164,9 @@ address :last-child {
 .menu:after{
     content: "";
     display: block;
-    /* position: relative; */
     clear: both;
-    /* height: 1px;
-    box-shadow: 0 0 6px black; */
 }
+
 .content-wrapper{
     min-height: 546px;
     background: white;
@@ -215,10 +211,8 @@ h2{
 }
 
 footer{
-    /* position: relative;
-    bottom: 0; */
+    margin: 10px auto;
     text-align: center;
     color: #fff;
     font-size: 12px;
-    margin: 10px auto;
 }
