@@ -24,16 +24,18 @@ and open the template in the editor.
 body{
     background: #0c739f url(../img/background.jpg) repeat-x 0px -36px ;
 }
-
+.content-shadow{
+    box-shadow: 0 0 8px black;
+    width: fit-content;
+    margin: 0 auto;
+}
 header, 
-.photo-wrapper,
+.preview,
 .menu,
 .content-wrapper,
 footer,
 .preview{
-    margin: 0 auto;
     width: 1000px;
-    /* box-shadow: 0 8px 8px black */
 }
 
 li{
@@ -100,8 +102,9 @@ address :last-child {
     font-weight: 600
 }
 
-.photo-wrapper{
-    position: relative;
+.preview{
+    height: 239px;
+    background: url(../img/photo.jpg);
     border-top: 1px solid #128aa7;
     border-bottom: 1px solid #128aa7;
 }
@@ -109,16 +112,16 @@ address :last-child {
 
 
 .menu{
-    height: 28px;
+    /* height: 28px; */
     background:  #323232;
     position: relative;
-    /* z-index: 1; */
     border-top: 1px solid #cacbcb;
-    
+    box-shadow: 0 2px 6px black;
 }
 .menu > li{
     float: left;
     position: relative;
+    padding: 0 2%;
     list-style: none;
 }
 .menu li a{
@@ -127,7 +130,7 @@ address :last-child {
     font-size: 14px;
     color: #fff;
     text-decoration: none;
-    line-height: 28px;
+    line-height: 27px;
     padding: 0 15px;
 }
 
@@ -141,6 +144,7 @@ address :last-child {
     transition: all .3S linear;
     transform-origin: 0 0;
     /* z-index: 1; */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .8);
 }
 
 .menu .sub-menu a{
@@ -148,28 +152,57 @@ address :last-child {
     /* height: 100%; */
     text-align: center;
 }
+
+.sub-menu li:first-child{
+    border-top: 1px solid black;
+}
+
 .menu li:hover > .sub-menu {
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
 }
 
+.menu:after{
+    content: "";
+    display: block;
+    /* position: relative; */
+    clear: both;
+    /* height: 1px;
+    box-shadow: 0 0 6px black; */
+}
 .content-wrapper{
     min-height: 546px;
     background: white;
-    clear: both;
+}
+.news, .info{
+    width: 21%;
+    padding: 8px 16px;
+    background: #edeef0;
+    min-height: 546px;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .info{
     float: left;
-    width: 25%;
+    border-right: 1px solid #c7cacf;
 }
 
 .news{
     float: right;
-    width: 25%;
+    border-left: 1px solid #c7cacf;
 }
-
+.info p,
+.news p{
+    font-size: 14px;
+    line-height: 24px;
+}
 .content{
     width: 45%;
     margin: 0 auto;
@@ -185,4 +218,7 @@ footer{
     /* position: relative;
     bottom: 0; */
     text-align: center;
+    color: #fff;
+    font-size: 12px;
+    margin: 10px auto;
 }
